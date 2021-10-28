@@ -12,5 +12,6 @@
     "koa": "^2.13.4",
     "koa-static": "^5.0.0"
   },
-  "type": "commonjs"
+  "type": "commonjs",
+  "engines": {"node": "^14.18.1"}
 }
