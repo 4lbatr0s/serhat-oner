@@ -5,21 +5,21 @@ This repo has been created by me, intended to sustain variable needs of the [Pat
 ## Contents
 
 
-#### [NODE.JS](https://github.com/4lbatr0s/Alotech-fullstack-bootcamp/tree/master/NodeJS) 
+#### [NODE.JS](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/NodeJS) 
 
 
-#### [DJANGO](https://github.com/4lbatr0s/Alotech-fullstack-bootcamp/tree/master/Django)
+#### [DJANGO](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/Django)
 
 
-#### [REACT](https://github.com/4lbatr0s/Alotech-fullstack-bootcamp/tree/master/React)
+#### [REACT](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/React)
 
 
 
 ## Installation 
 
-Clone the project: https://github.com/4lbatr0s/Alotech-fullstack-bootcamp.git
+Clone the project: https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner.git
 ```sh
-git clone https://github.com/4lbatr0s/Alotech-fullstack-bootcamp.git
+git clone https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner.git
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ ctrl+alt+t
 III.Clone the repository
 
 ```sh
-git clone https://github.com/4lbatr0s/Alotech-fullstack-bootcamp.git
+git clone https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner.git
 ```
 
 IV.Open VSCode from the folder path.
