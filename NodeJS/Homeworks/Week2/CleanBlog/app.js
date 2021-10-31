@@ -35,6 +35,17 @@ app.get('/', async (req,res)=> {
     })
 })
 
+//to fetch id information from index.ejs
+app.get('/posts/:id', async (req,res)=> {
+    // console.log(req.params.id) //show the request id.
+    const post = await Post.findById(req.params.id) //find the requested post by it's id number, and wait it until it does it's job.
+    res.render('post', {
+        post
+    })
+})
+
+
+
 app.get('/about', (req,res)=> {
     res.render('about')
 })
@@ -44,6 +55,10 @@ app.get('/add_post', (req,res)=> {
     res.render('add_post')
 })
 
+app.get('/post', (req,res)=> {
+    res.render('post')
+})
+
 app.post('/posts', async (req, res) => { // async - await yapısı kullanacğız.
     await Post.create(req.body) // thanks to the Post model, we are turning our request body into a database document.
     console.log(req.body) 
@@ -51,7 +66,7 @@ app.post('/posts', async (req, res) => { // async - await yapısı kullanacğız
   });
 
 
-const port = 5000
+const port = 3000
 
 app.listen(port, ()=> {
     console.log('App works on port:', port)
