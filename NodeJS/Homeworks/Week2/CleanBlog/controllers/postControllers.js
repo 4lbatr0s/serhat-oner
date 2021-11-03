@@ -3,9 +3,22 @@ const fs = require('fs')
 
 //get all  blog post summaries on the index page.
 exports.getAllPosts = async (req, res) => {
-    const posts = await Post.find({}); //wait until index page renders the posts.
-    res.render("index", {
-      posts,
+
+    const page = req.query.page || 1 //if there is no given query value, it is 1.
+    const postsPerPage = 2; //show 2 posts per page.
+    const totalPosts = await Post.find().countDocuments(); //return the number of all saved documents in the mongo db
+
+
+    const posts = await Post.find({}) 
+    .sort('-dateCreated')
+    .skip((page-1) * postsPerPage) //pass the former posts. ex: page = 2 -> skip 2-1*2 = 2 pass first 2 photos therefore first page.
+    .limit(postsPerPage)
+     console.log(totalPosts)
+
+     res.render("index", {
+      posts:posts,
+      current:page,
+      pages:Math.ceil((totalPosts/postsPerPage)) //create pages.
     });
   };
 
