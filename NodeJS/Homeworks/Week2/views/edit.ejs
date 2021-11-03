@@ -1,0 +1,56 @@
+<%- include('partials/_header'); -%>
+
+<body>
+
+  <%- include('partials/_navigation'); -%>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg3.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Edit the Post</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <form method="POST" action="/posts/<%=post._id%>?_method=PUT" enctype="multipart/form-data"> <!--to send a file via post request we should use enctype.-->
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Post Title</label>
+              <input type="text" name = "title" value="<%=post.title%>" class="form-control" placeholder="Title"  id="title" required>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Post Detail</label>
+              <textarea rows="5" name = "context" class="form-control" placeholder="Context" id="context" required><%=post.context%></textarea>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <%- include('partials/_footer'); -%>
+
+ 
+
+</body>
+
+</html>
