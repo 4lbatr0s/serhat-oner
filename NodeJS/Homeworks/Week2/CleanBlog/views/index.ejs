@@ -1,6 +1,5 @@
 <%- include('partials/_header'); -%>
 
-
 <body>
 
   <%- include('partials/_navigation'); -%>
@@ -38,7 +37,7 @@
           </a>
           <p class="post-meta">Posted by
             <a href="#">Serhat Oner</a>
-            on <%= new Date().getFullYear();%> </p>
+            on <%=posts[i].dateCreated.toDateString()%> </p>  <!--new Date().getFullYear()-->
         </div>
         <%} %>
        

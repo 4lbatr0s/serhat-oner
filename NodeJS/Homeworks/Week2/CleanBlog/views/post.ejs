@@ -1,4 +1,4 @@
-<%- include('partials/_footer'); -%>
+<%- include('partials/_header'); -%>
 
 <body>
 
@@ -28,14 +28,25 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <p><%=post.context%></p>
         </div>
+
+      <div class = "tm-bg-gray tm-share-box">
+        <div class = "text-center">
+          <a href ="/posts/edit/<%=post._id%>" class="btn btn-primary"><span>Update Details</span></a>
+        </div>
+        <br>
+        <div class = "text-center">
+          <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
+            <button onclick="return confirm('Are you sure?')" class="btn btn-danger" type="submit">Delete Post</button>
+          </form>
+        </div>
       </div>
     </div>
+  </div>
   </article>
 
   <hr>
 
   <%- include('partials/_footer'); -%>
-
  
 
 </body>

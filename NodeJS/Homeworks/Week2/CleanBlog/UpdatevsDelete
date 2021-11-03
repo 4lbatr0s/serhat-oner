@@ -1,0 +1,35 @@
+/*
+Edit Template: 
+-edit.ejs olusturuldu.
+-bu yapılırken add.ejs template'den faydalanıldı.
+-post.ejs içinde iki adet button olusturuldu, update ve delete.
+-update tıklandıgında bir get request calıssın istendi.
+
+*/
+
+`` `
+app.get("/posts/edit/:id", async (req, res) => {
+  const post = await Post.findOne({ _id: req.params.id }); //post equals the requested post with the same id.
+  res.render("edit", {
+    post,
+  });
+});
+```
+
+/*
+- güncellediğimiz zaman bir put request kullanacagız.
+put request tarayıcı tarafındna desteklenmedigi icin onu post request olarak override ettik.
+-postun bilgileri güncellendikten sonra tekrar postun bulundugu sayfaya id ile gitmesini istedik."
+
+-----------------------------------
+
+Delete:
+-Delete metodu icin ayrı bir template gerekmedigi icin delete.ejs olusturmadık.
+-post.ejs templatede bulunan delete buttonuna href ile bir DELETE override method yükledik.bu delete methodu aslında post.ejs'deki forma bakılırsa bir actiondur. ama bu button bir form olmadıgı icin yolu href attribute ile verdik.
+-buttonu a etiketine donusturduk.
+-app.delete fonksiyonumuzu olusturduk
+-method-override modülümüze POST VE GET metodlarımızın override edilecegini bir array ile bildirdik.
+-bir onclick event ekledik.
+```
+
+```
