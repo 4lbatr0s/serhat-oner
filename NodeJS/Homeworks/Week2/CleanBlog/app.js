@@ -3,8 +3,8 @@ const mongoose = require("mongoose"); //mongoose import.
 const fileUpload = require("express-fileupload"); //3rd party module.
 const methodOverride = require("method-override");
 const ejs = require("ejs"); //import ejs
-const postController = require("./controllers/postControllers");
-const pageController = require("./controllers/pageController");
+const postController = require("./controller/postControllers");
+const pageController = require("./controller/pageController");
 const app = express(); //express türden bir server instance
 
 // connect db
