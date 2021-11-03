@@ -8,12 +8,20 @@ const pageController = require("./controllers/pageController");
 const app = express(); //express türden bir server instance
 
 // connect db
-mongoose.connect("mongodb://localhost/clean-blog-test-db", {
+mongoose.connect("mongodb+srv://serhat:3DT7DZQ8.YP-Z%40x@cluster0.xrgen.mongodb.net/clean-blog-test-db?retryWrites=true&w=majority", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+  useUnifiedTopology: true
+}).then(()=> {
+  console.log('DB Connected!')
+}).catch((err)=> {
+  console.log(err)
+})
 
-//MIDDLEWARE
+//TEMPLATE ENGINE
+app.set("view engine", "ejs"); //tells the browser what view engine we are going to use.
+
+
+//MIDDLEWARES
 app.use(
   methodOverride("_method", {
     methods: ["POST", "GET"], //methods that will be overriden
@@ -27,9 +35,8 @@ app.use(function (req, res, next) {
   next(); //execute the next request at the moment middleware requirements completed, in this case console.log:req.path
 });
 
-app.set("view engine", "ejs"); //tells the browser what view engine we are going to use.
 
-//routes
+//ROUTES
 app.get("/", postController.getAllPosts); //get all posts.
 app.get('/posts/:id', postController.getPost);; //get individual blog posts.
 app.post("/posts", postController.createPost); //create a new post.
@@ -40,7 +47,7 @@ app.get("/add_post", pageController.getAddPostPage);
 app.get("/posts/edit/:id", pageController.getEditPage);
 
 
-const port = 3000;
+const port = process.env.PORT || 5000; //we want program to be able to fetch any port number heroku requests.
 
 app.listen(port, () => {
   console.log("App works on port:", port);
