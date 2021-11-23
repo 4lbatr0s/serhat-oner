@@ -7,6 +7,10 @@ This repo has been created by me, intended to sustain variable needs of the [Pat
 
 #### [NODE.JS](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/NodeJS) 
 
+##### First Week's KoaJS Deployment Project: [KoaJS](https://serhatoner.herokuapp.com/)
+
+##### Second Week's Heroku Deployment Project: [Cleanest Blog](https://cleanest-blog.herokuapp.com/)
+
 
 #### [DJANGO](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/Django)
 
