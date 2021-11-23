@@ -6,7 +6,7 @@ mySeriesTracker.printSeriesReport();
 
 ```
 
-![caseone] (file:///home/serhatoner/Pictures/case1.png)
+![image](https://user-images.githubusercontent.com/82971869/143129713-aa22e172-a88d-4f12-b49e-cfd534d7cdf6.png)
 
 ## Case Two:
 
@@ -16,8 +16,7 @@ mySeriesTracker.finishSerie();
 mySeriesTracker.printSeriesReport();
 
 ```
-![casetwo] (file:///home/serhatoner/Pictures/case2.png)
-
+![image](https://user-images.githubusercontent.com/82971869/143129904-308fc324-2e11-4a98-872f-7b64bede0a08.png)
 ## Case Three: 
 
 ```
@@ -32,5 +31,4 @@ mySeriesTracker.add(newSerie);
 mySeriesTracker.printSeriesReport();
 
 ```
-![casethree] (file:///home/serhatoner/Pictures/case3.png)
-
+![image](https://user-images.githubusercontent.com/82971869/143129940-d94738cc-5b21-4f79-ac8e-fcebf4be70de.png)
