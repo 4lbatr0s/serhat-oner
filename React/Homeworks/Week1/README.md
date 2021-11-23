@@ -1,6 +1,6 @@
 
 ## Case 1 Output:
-https://ibb.co/MnmhRkX
+![alt text](https://ibb.co/MnmhRkX)
 
 <hr>
 
