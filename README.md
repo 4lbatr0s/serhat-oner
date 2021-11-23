@@ -17,6 +17,7 @@ This repo has been created by me, intended to sustain variable needs of the [Pat
 
 #### [REACT](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/React)
 
+#### First Week's Tv Series Tracker Project: [TvSeriesTracker](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/React/Homeworks/Week1)
 
 
 ## Installation 
