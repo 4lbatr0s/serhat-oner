@@ -12,7 +12,7 @@ def my_awesome_decorator(fun):
 #mod_batch fixed.
 @my_awesome_decorator 
 def mod_batch(*numbers):
-    return all([number%5 == 0 for number in numbers])  #return all([True for number in numbers if number % 3 == 0]), oldschool isn't always cool, is it ?
+    return all([number%3 == 0 for number in numbers])  #return all([True for number in numbers if number % 3 == 0]), oldschool isn't always cool, is it ?
     
 print(mod_batch(1,2,3)) 
 
