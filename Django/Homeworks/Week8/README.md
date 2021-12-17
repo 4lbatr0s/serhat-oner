@@ -2,7 +2,7 @@
 
 #### Users: http://127.0.0.1:8000/users/
 
-![users](https://user-images.githubusercontent.com/82971869/146538505-f65dedc8-5d2a-472e-80ae-c7287d2c15fe.png)
+![users](https://user-images.githubusercontent.com/82971869/146539142-beee6e01-f331-46cf-88a9-1b2318f77948.png)
 
 #### Posts: http://127.0.0.1:8000/posts/
 
