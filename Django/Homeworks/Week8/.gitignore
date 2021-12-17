@@ -1,9 +1,0 @@
-./bin
-./include
-./lib
-./lib64
-./share
-db.sqlite3
-rest_framework
-./main/__pycache__
-./patikagram/__pycache__
