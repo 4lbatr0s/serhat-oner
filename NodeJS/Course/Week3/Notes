@@ -1,0 +1,5 @@
+1-express kurulur.
+2-nodemon kurulur, jsona start nodemon : app.js eklenir.
+3-routes klasörü icerisi düzenlenir.
+4-mongoose include edilir. appjs.
+5- Course Schema olusturulur, models klasörü içine.
