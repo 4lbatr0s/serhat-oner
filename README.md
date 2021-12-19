@@ -16,7 +16,7 @@ This repo has been created by me, intended to sustain variable needs of the [Pat
 
 #### Seventh Week's Two Python Solutions: [Solutions](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/Django/Homeworks/Week1/Homework1)
 #### Eight Week's Django REST API [API](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/Django/Homeworks/Week8)
-
+#### Nine Week's Django Like Duplication [Prevention](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/Django/Homeworks/Week9)
 #### [REACT](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/React)
 
 #### Fourth Week's Tv Series Tracker Project: [TvSeriesTracker](https://github.com/AloTech-Full-Stack-Bootcamp/serhat-oner/tree/main/React/Homeworks/Week1)
